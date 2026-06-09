@@ -21,6 +21,13 @@
 
 ---
 
+A companion concept release to the paper *"42-True: A Large Meaning Model for
+Declared Human Intent,"* archived of record at
+[doi:10.5281/zenodo.20616391](https://doi.org/10.5281/zenodo.20616391). The corpus
+the paper describes does not exist yet and cannot be scraped — it must be
+*produced*. This repository publishes the **schema** and conceptual **recipes**
+for that corpus; it is not a trained system.
+
 > **This repository is the first public concept of the model**, not a trained
 > system. It publishes the **schema** and a set of conceptual **recipes** for the
 > proposed corpus. The intent is twofold: first, to seed a body of
@@ -111,6 +118,23 @@ the compounding loop (paper §IV.C). See the
 [recipes README](forty_two_true/recipes/README.md) for details, and
 [`data/example_intent_pairs.jsonl`](data/example_intent_pairs.jsonl) for
 synthetic, clearly-labelled illustrations.
+
+## Code structure
+
+```text
+forty_two_true/
+├── intent_pair.py          # The primitive: the frozen four-tuple ( Id, C, M, O )
+├── schema.py               # ClassificationTier, ordered OutcomeGrade, TaxonomyNode
+└── recipes/                # The lifecycle that produces an intent pair
+    ├── declare.py          # Id — consented, unlinkable declaration
+    ├── classify.py         # C  — map to a taxonomy node (toy agent-tier resolver)
+    ├── match.py            # M  — counterparty offer over the zero-knowledge boundary
+    └── verify.py           # O  — grade the outcome, assemble the record
+
+data/example_intent_pairs.jsonl   # Synthetic, clearly-labelled illustrations
+paper/42-True_LMM_paper.pdf        # The paper (convenience copy of the Zenodo deposit)
+tests/                             # Schema invariants and example-data validation
+```
 
 ## Installation
 
