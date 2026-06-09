@@ -18,8 +18,8 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/shawnjensen/42-True"
-Paper = "https://github.com/shawnjensen/42-True/blob/main/paper/42-True_LMM_paper.pdf"
+Repository = "https://github.com/profila/42-True"
+Paper = "https://github.com/profila/42-True/blob/main/paper/42-True_LMM_paper.pdf"
 Zenodo = "https://doi.org/10.5281/zenodo.20616391"
 
 [project.optional-dependencies]
