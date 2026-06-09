@@ -1,0 +1,42 @@
+[project]
+name = "forty-two-true"
+version = "0.0.1"
+description = "42-True — first public concept of the Large Meaning Model: a schema for declared-intent training data."
+readme = "README.md"
+authors = [{ name = "Shawn Jensen", email = "shawn@profila.com" }]
+license = "Apache-2.0"
+requires-python = ">=3.9"
+keywords = [
+    "large-meaning-model",
+    "declared-intent",
+    "training-data",
+    "privacy-preserving-machine-learning",
+    "intent-classification",
+]
+dependencies = [
+    "pydantic>=2.0.0",
+]
+
+[project.urls]
+Repository = "https://github.com/shawnjensen/42-True"
+Paper = "https://github.com/shawnjensen/42-True/blob/main/paper/42-True_LMM_paper.pdf"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.6.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["forty_two_true"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
