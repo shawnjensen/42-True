@@ -10,7 +10,7 @@
 
 *Resolving what people want, in conditions where nothing is watching.*
 
-[![CI](https://github.com/shawnjensen/42-True/actions/workflows/ci.yaml/badge.svg)](https://github.com/shawnjensen/42-True/actions/workflows/ci.yaml)
+[![CI](https://github.com/profila/42-True/actions/workflows/ci.yaml/badge.svg)](https://github.com/profila/42-True/actions/workflows/ci.yaml)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-%E2%89%A53.9-blue.svg)](pyproject.toml)
 [![Status](https://img.shields.io/badge/status-concept-orange.svg)](#status--roadmap)

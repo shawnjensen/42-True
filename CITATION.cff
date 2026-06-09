@@ -12,7 +12,7 @@ authors:
     email: shawn@profila.com
 type: software
 license: Apache-2.0
-repository-code: "https://github.com/shawnjensen/42-True"
+repository-code: "https://github.com/profila/42-True"
 year: 2026
 doi: 10.5281/zenodo.20616391
 url: "https://doi.org/10.5281/zenodo.20616391"
