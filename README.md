@@ -14,6 +14,7 @@
 [![Python](https://img.shields.io/badge/python-%E2%89%A53.9-blue.svg)](pyproject.toml)
 [![Status](https://img.shields.io/badge/status-concept-orange.svg)](#status--roadmap)
 [![Paper](https://img.shields.io/badge/paper-PDF-8a2be2.svg)](paper/42-True_LMM_paper.pdf)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20616391.svg)](https://doi.org/10.5281/zenodo.20616391)
 
 </div>
 
@@ -40,7 +41,9 @@ carries a distortion that scale only reinforces.
 intent paired with a verified outcome**, gathered in an environment that is
 architecturally incapable of identifying the declarant. We call its atomic unit
 the **intent pair**, and the model trained upon it the **Large Meaning Model
-(LMM)**. The full argument is in the [paper](paper/42-True_LMM_paper.pdf).
+(LMM)**. The full argument is in the paper — included here as a
+[local copy](paper/42-True_LMM_paper.pdf) and published of record on Zenodo at
+[doi:10.5281/zenodo.20616391](https://doi.org/10.5281/zenodo.20616391).
 
 ## The intent pair
 
@@ -164,13 +167,19 @@ schema, and discussion of the production network are all welcome — see
 
 ```bibtex
 @misc{jensen2026fortytwotrue,
-  author = {Jensen, Shawn},
-  title  = {42-True: A Large Meaning Model for Declared Human Intent},
-  year   = {2026},
-  note   = {Profila GmbH},
-  url    = {https://github.com/shawnjensen/42-True},
+  author    = {Jensen, Shawn},
+  title     = {42-True: A Large Meaning Model for Declared Human Intent},
+  year      = {2026},
+  publisher = {Zenodo},
+  note      = {Profila GmbH},
+  doi       = {10.5281/zenodo.20616391},
+  url       = {https://doi.org/10.5281/zenodo.20616391},
 }
 ```
+
+The canonical, citable version of record is archived on Zenodo:
+[doi:10.5281/zenodo.20616391](https://doi.org/10.5281/zenodo.20616391). The PDF in
+[`paper/`](paper/) is a convenience copy of that deposit.
 
 ## License
 

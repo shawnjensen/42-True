@@ -5,7 +5,11 @@
 
 Shawn Jensen — Profila GmbH, Switzerland — `shawn@profila.com`
 
-📄 [**42-True_LMM_paper.pdf**](42-True_LMM_paper.pdf)
+📄 [**42-True_LMM_paper.pdf**](42-True_LMM_paper.pdf) (convenience copy)
+🔗 **Version of record:** [doi:10.5281/zenodo.20616391](https://doi.org/10.5281/zenodo.20616391) (Zenodo)
+
+The Zenodo deposit is the canonical, citable, timestamped record for reference
+and copyright provenance. The PDF in this directory mirrors that deposit.
 
 ## Abstract
 

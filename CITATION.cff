@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use 42-True, please cite the archived version of record on Zenodo."
+title: "42-True: A Large Meaning Model for Declared Human Intent"
+abstract: >-
+  The first public concept of the Large Meaning Model (LMM): a schema and
+  conceptual recipes for the intent pair (Id, C, M, O), the atomic unit of a
+  proposed corpus of declared intent paired with verified outcome.
+authors:
+  - family-names: Jensen
+    given-names: Shawn
+    affiliation: "Profila GmbH"
+    email: shawn@profila.com
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/shawnjensen/42-True"
+year: 2026
+doi: 10.5281/zenodo.20616391
+url: "https://doi.org/10.5281/zenodo.20616391"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20616391
+    description: "Zenodo deposit — canonical, citable version of record."
+preferred-citation:
+  type: report
+  title: "42-True: A Large Meaning Model for Declared Human Intent"
+  authors:
+    - family-names: Jensen
+      given-names: Shawn
+      affiliation: "Profila GmbH"
+  year: 2026
+  doi: 10.5281/zenodo.20616391
+  url: "https://doi.org/10.5281/zenodo.20616391"
