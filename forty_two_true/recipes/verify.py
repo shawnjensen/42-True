@@ -22,9 +22,7 @@ from forty_two_true.intent_pair import (
 from forty_two_true.schema import OutcomeGrade
 
 
-def observe_outcome(
-    grade: OutcomeGrade, *, proof_ref: str | None = None
-) -> Outcome:
+def observe_outcome(grade: OutcomeGrade, *, proof_ref: str | None = None) -> Outcome:
     """Record a realised outcome, enforcing that verification is backed by proof."""
 
     verified = grade is OutcomeGrade.VERIFIED_RESOLUTION
