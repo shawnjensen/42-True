@@ -1,0 +1,31 @@
+name: "🏗️ Production network"
+description: Ideas or concerns about how the corpus could actually be produced — declaration, market, verification.
+title: "[Production] "
+labels: ["production-network"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The corpus cannot be scraped, simulated, or extracted — it must be
+        **produced** by a network (**§VIII**). This is the hardest open problem.
+        Proposals for any of the four layers are welcome.
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Which layer?
+      options:
+        - "Declaration surface (where stating intent is safe)"
+        - "Classification layer (at scale)"
+        - "Market (creating conditions for outcomes to occur)"
+        - "Verification layer (anchoring outcomes to attestable events)"
+        - "Bootstrapping / cold-start (corpus has zero records on day one)"
+        - "Cross-cutting / incentives"
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea or concern
+      description: How could this layer work, or why might it fail? Existing systems to learn from are useful.
+    validations:
+      required: true

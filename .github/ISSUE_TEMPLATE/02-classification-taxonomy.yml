@@ -1,0 +1,38 @@
+name: "🗂️ Classification & taxonomy"
+description: Proposals or concerns about the three-tier classification architecture or the machine-addressable taxonomy.
+title: "[Classification] "
+labels: ["classification"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The three-tier architecture — specialist **agents**, opted-in
+        **community**, and independent **experts** — is described in **§V**
+        (Fig. 5) and modelled in
+        [`forty_two_true/schema.py`](../../forty_two_true/schema.py).
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Which tier or layer?
+      options:
+        - "Tier 1 — Agents (high confidence)"
+        - "Tier 2 — Community (ambiguous middle)"
+        - "Tier 3 — Experts (long tail / audit)"
+        - "Routing / confidence thresholds between tiers"
+        - "The taxonomy itself (schema nodes)"
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: The issue or proposal
+      description: e.g. a failure mode of a tier, a gaming risk, a taxonomy node that's missing or mis-modelled.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting reasoning or references
+      description: Prior art, datasets, or an argument for why this matters. Optional.
+    validations:
+      required: false

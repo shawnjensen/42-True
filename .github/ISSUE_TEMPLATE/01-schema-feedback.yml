@@ -1,0 +1,39 @@
+name: "🧩 Schema / intent-pair feedback"
+description: Critique or propose a change to the intent pair ( Id, C, M, O ) — the atomic unit of the corpus.
+title: "[Schema] "
+labels: ["schema"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The intent pair is defined in **§III** of the paper and implemented in
+        [`forty_two_true/intent_pair.py`](../../forty_two_true/intent_pair.py).
+        Use this for the *structure* of the record. For the taxonomy or the
+        resolver tiers, use the **Classification & taxonomy** template instead.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Which part of the tuple?
+      options:
+        - "Id — declared intent"
+        - "C — classification"
+        - "M — match"
+        - "O — outcome / grading"
+        - "The tuple as a whole"
+        - "Provenance / immutability invariants"
+    validations:
+      required: true
+  - type: textarea
+    id: concern
+    attributes:
+      label: What's the concern?
+      description: What does the current schema get wrong, miss, or over-specify?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Concrete field, type, or invariant you'd add, remove, or rename. Code/JSON welcome.
+    validations:
+      required: false

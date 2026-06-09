@@ -1,0 +1,35 @@
+name: "📚 Prior work or correction"
+description: Point to relevant literature, related projects, or correct a factual error in the paper or repo.
+title: "[Prior work] "
+labels: ["prior-work"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Pointers to existing literature and corrections are explicitly welcome
+        (see [CONTRIBUTING.md](../../CONTRIBUTING.md)). This helps situate the
+        Large Meaning Model against what already exists.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options:
+        - "Prior work / literature pointer"
+        - "Related project or system"
+        - "Factual correction (paper or repo)"
+    validations:
+      required: true
+  - type: textarea
+    id: reference
+    attributes:
+      label: Reference
+      description: Citation, link, or DOI — and a one-line note on why it's relevant.
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Where does it apply?
+      description: e.g. "paper §V", "README claim about observational data", "schema.py OutcomeGrade".
+    validations:
+      required: false

@@ -37,4 +37,7 @@ mutating existing ones, and keep that invariant in any new code.
 
 ## Discussion
 
-Open an issue, or reach the author at `shawn@profila.com`.
+Open an issue using one of the [issue forms](.github/ISSUE_TEMPLATE/) — there is
+one per contribution type above (schema, classification, privacy, production
+network, stewardship, and prior-work/corrections). For private or sensitive
+matters, reach the author at `shawn@profila.com`.
