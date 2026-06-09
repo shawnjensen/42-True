@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📄 Read the paper (Zenodo — version of record)
+    url: https://doi.org/10.5281/zenodo.20616391
+    about: The full argument, the intent pair, and the privacy/classification architecture. Please skim the relevant section before filing.
+  - name: ✉️ Email the author (private / sensitive matters)
+    url: mailto:shawn@profila.com
+    about: For anything not suited to a public issue. Never post real declared-intent data here.

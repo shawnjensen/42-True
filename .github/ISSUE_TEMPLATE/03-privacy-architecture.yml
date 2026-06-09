@@ -1,0 +1,39 @@
+name: "🔒 Privacy architecture"
+description: Scrutinise the zero-knowledge boundary, unlinkability, or outcome attestation.
+title: "[Privacy] "
+labels: ["privacy"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The privacy architecture is the load-bearing claim of the project: the
+        corpus is honest **only** if the network is architecturally incapable of
+        identifying declarants (**§VI**, Fig. 6). Adversarial scrutiny is
+        especially welcome here.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Which guarantee or component?
+      options:
+        - "Unlinkable token / no persistent identity"
+        - "Zero-knowledge boundary (counterparties see only C, never Id)"
+        - "Differential privacy of the trained model"
+        - "Outcome attestation / cryptographic proof"
+        - "Consent model"
+        - "Other"
+    validations:
+      required: true
+  - type: textarea
+    id: concern
+    attributes:
+      label: The concern or attack
+      description: What breaks the guarantee, leaks identity, or de-anonymises a declarant?
+    validations:
+      required: true
+  - type: textarea
+    id: threat_model
+    attributes:
+      label: Assumptions / threat model
+      description: What capabilities does the adversary have? What are you assuming about the stack?
+    validations:
+      required: false

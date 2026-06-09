@@ -1,0 +1,32 @@
+name: "⚖️ Stewardship & commons"
+description: Governance, ownership, and contribution-attribution for the model as a commons.
+title: "[Stewardship] "
+labels: ["stewardship"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The paper proposes that a foundation hold the Large Meaning Model as a
+        **commons** and distribute returns to contributors in proportion to the
+        value they add (**§VII**). This template is for governance and
+        attribution questions, not code.
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Topic
+      options:
+        - "Foundation / governance structure"
+        - "Contribution attribution & data valuation"
+        - "Returns / incentive distribution"
+        - "Licensing of the corpus and the model"
+        - "Resistance to capture by a single actor"
+        - "Other"
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: The question or proposal
+      description: Concrete mechanisms, prior models (cooperatives, data trusts, etc.), or risks.
+    validations:
+      required: true
